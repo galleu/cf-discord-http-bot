@@ -26,11 +26,11 @@ workers_dev = true
 
 [vars]
 
-# Your Discord's client Public key
+# Your Discord client Public key
 PublicKey = ""
-# Your Discord's client ID
+# Your Discord client ID / Application ID
 ClientID = ""
-# Your Discord's client Bot Token.
+# Your Discord client Bot Token.
 Auth = "Bot YOUR_BOTS_TOKEN"  # Leave the `Bot ` at the start and just replace `YOUR_BOTS_TOKEN` with the token
 # The version of your bot. If you want, you can reference this in the command response 
 Version = "1.0.0"
@@ -46,3 +46,12 @@ Make sure you have [wrangler](https://github.com/cloudflare/wrangler#readme) dow
 ```bash
 $ wrangler publish
 ```
+
+Then add the url to discord at the `Interactions Endpoint URL`. Make sure to add `/api/interactions` to the end.
+
+So it should look something like this: 
+`https://http-discord-bot.<Your Workers Subdomain>.workers.dev/api/interactions`
+
+Then you should see `All your edits have been carefully recorded.`
+
+Make sure you register your commands at `/commands/setup`.

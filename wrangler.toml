@@ -1,0 +1,16 @@
+name = "http-discord-bot"
+type = "javascript"
+account_id = ""
+
+workers_dev = true
+
+[vars]
+PublicKey = "f1fc02bf806f1bb222c702406680065bfe22212750371055cd204091284c14a7"                # Your client's public key
+ClientID = "892709844430254110"                 # Your client's ID
+Auth = "Bot ODkyNzA5ODQ0NDMwMjU0MTEw.YVQ21A.phq0tHUE4OpMsjQbvEuetPutEJQ"  # The client's token
+Version = "1.0.0"
+
+#[[kv_namespaces]]
+#binding = "KV"
+#preview_id = ""
+#id = ""
